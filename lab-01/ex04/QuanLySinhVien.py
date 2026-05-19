@@ -88,3 +88,6 @@ class QuanLySinhVien:
         for sv in listSV:
             print("{:<8} {:<18} {:<8} {:<8}{:<8} {:<8}".format(sv._id, sv._name, sv._sex, sv._major, sv._diemTB, sv._hocLuc))
             print("\n")
+
+    def getListSinhVien(self):
+        return self.listSinhVien

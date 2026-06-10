@@ -48,8 +48,8 @@ def handle_client(client_socket, client_address):
         
         for client, key in clients:
             if client != client_socket:
-                encrypted_message = encrypt_message(key, decrypted_message)
-                client.send(encrypted_message)
+                encrypted = encrypt_message(key, decrypted_message)
+                client.send(encrypted)
         if decrypted_message == "exit":
             break
     
